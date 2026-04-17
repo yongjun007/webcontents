@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>자기소개 웹페이지</title>
+    <style>
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: 120px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>About me</h2>
+        <hr>
+        <p>
+            안녕하세요 제 이름은 곽용준입니다. 명지전문대 컴퓨터공학과에 재학 중인 학생입니다.<br>
+            앞으로의 진로에 대한 계획과 다양한 취미를 즐기고 있는 학생입니다.
+        </p>
+    </header>
+
+    <section>
+        <nav>
+            <h3>목차</h3>
+            <ul>
+                <li><a href="#분야">관심분야</a></li>
+                <li><a href="#취미">취미활동</a></li>
+                <li><a href="#시간표">강의시간표</a></li>
+            </ul>
+        </nav>
+
+        <article id="분야">
+            <h2>관심 분야</h2>
+            <hr>
+            <ul>
+                <li>웹 개발
+                    <ul>
+                        <li>HTML / CSS 기초</li>
+                        <li>JavaScript 기초</li>
+                    </ul>
+                </li>
+                <li>프로그래밍
+                    <ul>
+                        <li>Python</li>
+                        <li>자료구조 기초</li>
+                    </ul>
+                </li>
+                <li>인공지능 입문
+                    <ul>
+                        <li>머신러닝 개념</li>
+                        <li>AI 활용 사례</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article id="취미">
+            <h2>취미 활동</h2>
+            <hr>
+            <table class="hobby-table">
+                <tr>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827">
+                        <br>탁구
+                    </td>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+                        <br>헬스
+                    </td>
+                    <td>
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d">
+                        <br>랩, 노래
+                    </td>
+                </tr>
+            </table>
+        </article>
+
+        <article id="시간표">
+            <h2>강의 시간표</h2>
+            <hr>
+
+            <table>
+                <caption>2025년 1학기 시간표</caption>
+
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>09</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td></td>
+                        <td rowspan="3">프로그래밍언어실습</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="3">컴퓨터과학개론</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td rowspan="2">SW개발문제해결능력</td>
+                        <td></td>
+                        <td rowspan="3">인터넷콘텐츠</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <br><br>
+
+    <footer>
+        <a href="survey3.html">설문조사</a> <br><br>
+        Copyright 2026 by MYONGJI COLLEGE
+    </footer>
+</body>
+
+</html>
