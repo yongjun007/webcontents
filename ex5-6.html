@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>z-index 프로퍼티</title>
+        <style>
+            div {position: absolute;}
+            img {position: absolute; width: 100px; height: 140px;}
+            .A {z-index: -3; left: 10px; top: 20px;}
+            .two {z-index: 2; left: 40px; top: 30px;}
+            .three {z-index: 3; left: 80px; top: 40px;}
+            .seven {z-index: 7; left: 120px; top: 50px;}
+        </style>
+    </head>
+    <body>
+        <h3>z-index 프로퍼티</h3>
+        <hr>
+        <div>
+            <img class="A" src="https://img.hankyung.com/photo/200508/2005081663911_2005081618931.jpg" alt="">
+            <img class="two" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Playing_card_spade_2.svg/960px-Playing_card_spade_2.svg.png" alt="">
+            <img class="three" src="https://previews.123rf.com/images/pandawild/pandawild1509/pandawild150900136/45128584-poker-playing-card-3-spade.jpg" alt="">
+            <img class="seven" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQXDNKileYZX42V7dTw4KeVmreq3Q1DPuEw&s" alt="">
+        </div>
+    </body>
+</html>
