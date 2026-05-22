@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>회전실습</title>
+    <style>
+        .spin {
+            width: 300px; animation: spin 1s infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            } 
+        }
+
+        .lr {
+            width: 300px; animation: leftright 1s infinite;
+        }
+        @keyframes leftright {
+            from {
+                transform: rotate(-90deg);
+            }
+            to {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>어지러워요</h3> <br><hr><br>
+
+    <img class="spin" src="https://i.namu.wiki/i/izVXkClWRy9-s5DAkC_lGo3za4Zy9seGH1V6AM0qZJzsckE9eWe6-Hp-1OvJm_DkVv7BL7U0Ar7QB89ApaklkQ.webp" alt="">
+
+    <img class="lr" src="https://i.namu.wiki/i/izVXkClWRy9-s5DAkC_lGo3za4Zy9seGH1V6AM0qZJzsckE9eWe6-Hp-1OvJm_DkVv7BL7U0Ar7QB89ApaklkQ.webp" alt="">
+
+</body>
+</html>
