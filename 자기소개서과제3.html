@@ -1,174 +1,269 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>자기소개서(CSS 모양 꾸미기)</title>
-    <style>
-        * {margin: 0;}
-        body {background-color: aliceblue;}
 
-        header {border-bottom: 1px solid black;}
-        p,li {font-size: 1em; text-indent: 1em;
-            font-family: 'Nanum Pen Script', cursive;
-        }
-        li {
-            margin-left: 15px ;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <title>자기소개서(CSS 모양 꾸미기)</title>
+        <style>
+            * {
+                margin: 0;
+            }
 
-        a {color: blue; text-decoration: none;}
-        h2 a {text-shadow: 1px 2px rgb(52, 52, 201);}
+            body {
+                background-color: aliceblue;
+            }
 
-        .상단 {border: 1px dotted black; padding: 10px;}
+            header {
+                border-bottom: 1px solid black;
+            }
 
-        img {width: 300px; height: 200px;}
-        table, td, th {
-            border: 1px solid gray;
-            border-collapse: collapse;
-            text-align: center;
-        }
+            p,
+            li {
+                font-size: 1em;
+                text-indent: 1em;
+                font-family: 'Nanum Pen Script', cursive;
+            }
 
-        footer {
-            background-color: orange;
-            border-radius: 10px;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .시간표 {width: 500px;}
+            li {
+                margin-left: 15px;
+            }
 
-        .시간 {background-color: yellow; height: 50px;}
+            a {
+                color: blue;
+                text-decoration: none;
+            }
 
-        #시 {background-color:beige;}
+            h2 a {
+                text-shadow: 1px 2px rgb(52, 52, 201);
+            }
 
-        #수업 {width: 70px; background-color:pink;}
-        .시간표 #수업:hover{
-            border-radius: 15px;
-            transform: scale(2,2);
-            transition: 1.5s;
-            
-        } 
-        .시간표 tr td {background-color:cornsilk ;}
+            .상단 {
+                border: 1px dotted black;
+                padding: 10px;
+            }
 
-    </style>
-</head>
+            img {
+                width: 300px;
+                height: 200px;
+            }
 
-<body>
+            table,
+            td,
+            th {
+                border: 1px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+            }
 
-<header>
-    <h1 style="color: brown; text-align: center;">About me</h1>
-    <br>
-    <p>
-        안녕하세요 제 이름은 곽용준입니다. 올해 명지전문대에 입학한 새내기입니다 <br>
-        다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~
-    </p>
-    <br>
-</header>
+            footer {
+                background-color: orange;
+                border-radius: 10px;
+                padding: 10px;
+                margin-top: 20px;
+            }
 
-<br><h2><a href="#">목차</a></h2><br>
+            .시간표 {
+                width: 500px;
+            }
 
-<nav>
-    <ul class="상단">
-        <li><a href="#관심분야">관심분야</a></li>
-        <li><a href="#취미활동">취미활동</a></li>
-        <li><a href="#강의시간표">강의시간표</a></li>
-    </ul>
-</nav>
+            .시간 {
+                background-color: yellow;
+                height: 50px;
+            }
 
-<br>
+            #시 {
+                background-color: beige;
+            }
 
-<h2 id="관심분야"><a href="#">관심분야</a></h2>
-<br><hr><br>
+            #수업 {
+                width: 70px;
+                background-color: pink;
+            }
 
-<ul>
-    <li>웹 개발
+            .시간표 #수업:hover {
+                border-radius: 15px;
+                transform: scale(2, 2);
+                transition: 1.5s;
+
+            }
+
+            .시간표 tr td {
+                background-color: cornsilk;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 style="color: brown; text-align: center;">About me</h1>
+            <br>
+            <p>
+                안녕하세요 제 이름은 곽용준입니다. 올해 명지전문대에 입학한 새내기입니다 <br>
+                다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~
+            </p>
+            <br>
+        </header>
+
+        <br>
+        <h2><a href="#">목차</a></h2><br>
+
+        <nav>
+            <ul class="상단">
+                <li><a href="#관심분야">관심분야</a></li>
+                <li><a href="#취미활동">취미활동</a></li>
+                <li><a href="#강의시간표">강의시간표</a></li>
+            </ul>
+        </nav>
+
+        <br>
+
+        <h2 id="관심분야"><a href="#">관심분야</a></h2>
+        <br>
+        <hr><br>
+
         <ul>
-            <li>HTML / CSS 기초</li>
-            <li>JavaScript 기초</li>
+            <li>웹 개발
+                <ul>
+                    <li>HTML / CSS 기초</li>
+                    <li>JavaScript 기초</li>
+                </ul>
+            </li>
+            <li>프로그래밍
+                <ul>
+                    <li>Python</li>
+                    <li>자료구조 기초</li>
+                </ul>
+            </li>
+            <li>인공지능 입문
+                <ul>
+                    <li>머신러닝 개념</li>
+                    <li>AI 활용 사례</li>
+                </ul>
+            </li>
         </ul>
-    </li>
-    <li>프로그래밍
-        <ul>
-            <li>Python</li>
-            <li>자료구조 기초</li>
-        </ul>
-    </li>
-    <li>인공지능 입문
-        <ul>
-            <li>머신러닝 개념</li>
-            <li>AI 활용 사례</li>
-        </ul>
-    </li>
-</ul>
 
-<br>
+        <br>
 
 
-<h2 id="취미활동"><a href="#">취미활동</a></h2>
-<br><hr><br>
+        <h2 id="취미활동"><a href="#">취미활동</a></h2>
+        <br>
+        <hr><br>
 
-<table>
-    <tr>
-        <td><img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827"><br></td>
-        <td><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1"><br></td>
-        <td><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"><br></td>
-    </tr>
-    <tr>
-        <td>탁구</td>
-        <td>헬스</td>
-        <td>노래</td>
-    </tr>
-</table>
+        <table>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827"><br></td>
+                <td><img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1"><br></td>
+                <td><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d"><br></td>
+            </tr>
+            <tr>
+                <td>탁구</td>
+                <td>헬스</td>
+                <td>노래</td>
+            </tr>
+        </table>
 
-<br>
+        <br>
 
-<!-- 시간표 -->
-<h2 id="강의시간표"><a href="#">강의시간표 (2026년 1학기)</a></h2>
-<br><hr><br>
+        <h2 id="강의시간표"><a href="#">강의시간표 (2026년 1학기)</a></h2>
+        <br>
+        <hr><br>
 
-<table class="시간표">
-    <tr class="시간">
-        <th>시간</th>
-        <th>월</th>
-        <th>화</th>
-        <th>수</th>
-        <th>목</th>
-        <th>금</th>
-    </tr>
-    <tr>
-        <td id="시">09</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">10</td><td></td><td id="수업">프로그래밍<br>언어</td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">11</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">12</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">13</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">14</td><td id="수업">SW문제<br>해결능력</td><td></td><td></td><td id="수업">인터넷 <br> 콘텐츠</td><td id="수업">컴퓨터<br>과학개론</td>
-    </tr>
-    <tr>
-        <td id="시">15</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">16</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">17</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td id="시">18</td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-</table>
+        <table class="시간표">
+            <tr class="시간">
+                <th>시간</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+            <tr>
+                <td id="시">09</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">10</td>
+                <td></td>
+                <td id="수업">프로그래밍<br>언어</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">11</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">13</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">14</td>
+                <td id="수업">SW문제<br>해결능력</td>
+                <td></td>
+                <td></td>
+                <td id="수업">인터넷 <br> 콘텐츠</td>
+                <td id="수업">컴퓨터<br>과학개론</td>
+            </tr>
+            <tr>
+                <td id="시">15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">16</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">17</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="시">18</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
 
-<footer>
-    <p><a href="survey4.html" target="_blank">설문조사</a></p>
-    <p>Copyright 2026 by MYONGJI COLLEGE</p>
-</footer>
+        <footer>
+            <p><a href="survey4.html" target="_blank">설문조사</a></p>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
+    </body>
 
-</body>
 </html>
